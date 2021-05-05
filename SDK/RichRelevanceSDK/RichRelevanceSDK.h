@@ -21,6 +21,8 @@ FOUNDATION_EXPORT double RichRelevanceSDKVersionNumber;
 //! Project version string for RichRelevanceSDK.
 FOUNDATION_EXPORT const unsigned char RichRelevanceSDKVersionString[];
 
+#ifndef SWIFT_PACKAGE
+
 // GENERAL
 
 #import <RichRelevanceSDK/RCHSDK.h>
@@ -81,3 +83,5 @@ FOUNDATION_EXPORT const unsigned char RichRelevanceSDKVersionString[];
 #import <RichRelevanceSDK/RCHUserProfileResponseParser.h>
 #import <RichRelevanceSDK/RCHPersonalizeResponseParser.h>
 #import <RichRelevanceSDK/RCHGetProductsResponseParser.h>
+
+#endif

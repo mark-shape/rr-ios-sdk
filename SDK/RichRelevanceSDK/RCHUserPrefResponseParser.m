@@ -16,7 +16,11 @@
 #import "RCHUserPrefResponseParser.h"
 #import "RCHErrors.h"
 #import "RCHUserPrefResult.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/NSObject+RCHImport.h"
+#else
 #import "NSObject+RCHImport.h"
+#endif
 
 @implementation RCHUserPrefResponseParser
 

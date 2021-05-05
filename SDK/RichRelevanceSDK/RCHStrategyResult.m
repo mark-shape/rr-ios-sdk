@@ -15,7 +15,11 @@
 
 #import "RCHStrategyResult.h"
 #import "RCHRecommendedProduct.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/NSObject+RCHImport.h"
+#else
 #import "NSObject+RCHImport.h"
+#endif
 
 @implementation RCHStrategyResult
 

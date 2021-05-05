@@ -16,7 +16,12 @@
 #import "RCHUserProfileResponseParser.h"
 #import "RCHErrors.h"
 #import "RCHUserProfileResult.h"
+#import "Import/NSObject+RCHImport.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/NSObject+RCHImport.h"
+#else
 #import "NSObject+RCHImport.h"
+#endif
 
 @implementation RCHUserProfileResponseParser
 

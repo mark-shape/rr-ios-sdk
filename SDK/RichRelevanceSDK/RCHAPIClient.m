@@ -15,13 +15,20 @@
 
 #import "RCHAPIClient.h"
 #import "RCHAPIClientConfig.h"
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHLog.h"
+#import "Private/RCHWebUtils.h"
+#import "Private/RCHOAuth.h"
+#import "Private/RCHNetworkReachabilityManager.h"
+#else
 #import "RCHLog.h"
 #import "RCHWebUtils.h"
+#import "RCHOAuth.h"
+#import "RCHNetworkReachabilityManager.h"
+#endif
 #import "RCHErrors.h"
 #import "RCHAPIConstants.h"
 #import "RCHAPIResponseParser.h"
-#import "RCHOAuth.h"
-#import "RCHNetworkReachabilityManager.h"
 #import "RCHAPIResult.h"
 
 @interface RCHAPIClient ()

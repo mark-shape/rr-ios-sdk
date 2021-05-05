@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifdef SWIFT_PACKAGE
+#import "Import/RCHImportable.h"
+#else
 #import "RCHImportable.h"
+#endif
 
 @interface RCHSearchLink : NSObject <RCHImportable>
 

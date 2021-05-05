@@ -16,7 +16,11 @@
 #import "RCHUserPrefBuilder.h"
 #import "RCHAPIConstants.h"
 #import "RCHSDK.h"
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHLog.h"
+#else
 #import "RCHLog.h"
+#endif
 #import "RCHAPIClientConfig.h"
 #import "RCHAPIClient.h"
 #import "RCHCommonIncludes.h"

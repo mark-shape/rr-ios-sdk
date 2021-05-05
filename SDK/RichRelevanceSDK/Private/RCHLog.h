@@ -14,7 +14,11 @@
 //  limitations under the License.
 
 @import Foundation;
+#ifdef SWIFT_PACKAGE
+#import "../RCHLogLevels.h"
+#else
 #import "RCHLogLevels.h"
+#endif
 
 @interface RCHLog : NSObject
 

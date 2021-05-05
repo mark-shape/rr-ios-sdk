@@ -14,7 +14,11 @@
 //  limitations under the License.
 
 #import "RCHRecommendedProduct.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/NSObject+RCHImport.h"
+#else
 #import "NSObject+RCHImport.h"
+#endif
 #import "RCHRange.h"
 #import "RCHCategory.h"
 #import "RCHAPIConstants.h"

@@ -16,6 +16,7 @@
 #import "RCHSearchBuilder.h"
 #import "RCHSearchResponseParser.h"
 #import "RCHPlacementsBuilder.h"
+#import "RCHSearchFacet.h"
 
 @implementation RCHSearchBuilder
 

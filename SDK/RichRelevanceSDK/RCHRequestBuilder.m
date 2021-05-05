@@ -15,7 +15,11 @@
 
 #import "RCHRequestBuilder.h"
 #import "RCHAPIConstants.h"
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHLog.h"
+#else
 #import "RCHLog.h"
+#endif
 
 NSString *const kRCHRequestBuilderPipeListDelimiter = @"|";
 NSString *const kRCHRequestBuilderCommaListDelimiter = @",";

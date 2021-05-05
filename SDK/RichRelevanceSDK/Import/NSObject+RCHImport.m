@@ -14,7 +14,11 @@
 //  limitations under the License.
 
 #import "NSObject+RCHImport.h"
+#ifdef SWIFT_PACKAGE
+#import "Private/NSObject+RCHImport_Private.h"
+#else
 #import "NSObject+RCHImport_Private.h"
+#endif
 #import <objc/runtime.h>
 
 static NSString *const kRCHImportISO8601DateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";

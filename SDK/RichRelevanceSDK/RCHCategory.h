@@ -14,7 +14,11 @@
 //  limitations under the License.
 
 @import Foundation;
+#ifdef SWIFT_PACKAGE
+#import "Import/RCHImportable.h"
+#else
 #import "RCHImportable.h"
+#endif
 
 @interface RCHCategory : NSObject <RCHImportable>
 

@@ -13,7 +13,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHWebUtils.h"
+#else
 #import "RCHWebUtils.h"
+#endif
 
 static NSString *const kRCHCharactersToBeEscapedInQueryString = @":/?&=;+!@#$()',*";
 

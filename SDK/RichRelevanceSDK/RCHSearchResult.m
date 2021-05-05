@@ -17,7 +17,13 @@
 #import "RCHSearchProduct.h"
 #import "RCHSearchLink.h"
 #import "RCHSearchFacet.h"
+#import "RCHAPIConstants.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/NSObject+RCHImport.h"
+#else
 #import "NSObject+RCHImport.h"
+#endif
+
 
 @implementation RCHSearchResult
 

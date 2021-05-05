@@ -13,7 +13,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHNetworkReachabilityManager.h"
+#else
 #import "RCHNetworkReachabilityManager.h"
+#endif
 
 #import <netinet/in.h>
 #import <netinet6/in6.h>

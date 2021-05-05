@@ -14,6 +14,7 @@
 //  limitations under the License.
 
 #import "RCHAutocompleteSuggestion.h"
+#import "RCHAPIConstants.h"
 
 @implementation RCHAutocompleteSuggestion
 

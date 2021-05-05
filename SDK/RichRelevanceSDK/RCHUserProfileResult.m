@@ -14,7 +14,11 @@
 //  limitations under the License.
 
 #import "RCHUserProfileResult.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/NSObject+RCHImport.h"
+#else
 #import "NSObject+RCHImport.h"
+#endif
 #import "RCHUserProfileElement.h"
 
 @implementation RCHUserProfileResult

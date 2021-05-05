@@ -14,7 +14,11 @@
 //  limitations under the License.
 
 #import "RCHPlacementsBuilder.h"
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHLog.h"
+#else
 #import "RCHLog.h"
+#endif
 #import "RCHAPIConstants.h"
 #import "RCHRecsForPlacementsResponseParser.h"
 

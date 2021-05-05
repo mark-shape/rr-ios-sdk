@@ -15,7 +15,11 @@
 
 @import Foundation;
 #import "RCHCommonIncludes.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/RCHImportable.h"
+#else
 #import "RCHImportable.h"
+#endif
 
 @interface RCHUserPreference : NSObject <RCHImportable>
 

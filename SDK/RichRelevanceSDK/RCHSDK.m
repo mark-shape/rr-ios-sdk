@@ -14,7 +14,11 @@
 //  limitations under the License.
 
 #import "RCHSDK.h"
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHLog.h"
+#else
 #import "RCHLog.h"
+#endif
 #import "RCHAPIClient.h"
 #import "RCHPlacementRecsBuilder.h"
 #import "RCHStrategyRecsBuilder.h"

@@ -13,7 +13,12 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import <RichRelevanceSDK/RichRelevanceSDK.h>
+#import "RichRelevanceSDK.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/RCHImportable.h"
+#else
+#import "RCHImportable.h"
+#endif
 
 @interface RCHAutocompleteSuggestion : NSObject <RCHImportable>
 

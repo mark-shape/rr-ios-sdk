@@ -14,12 +14,17 @@
 //  limitations under the License.
 
 #import "RCHPlacementRecsBuilder.h"
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHLog.h"
+#import "Private/RCHWebUtils.h"
+#else
 #import "RCHLog.h"
+#import "RCHWebUtils.h"
+#endif
 #import "RCHAPIConstants.h"
 #import "RCHRecsForPlacementsResponseParser.h"
 #import "RCHSearchResult.h"
 #import "RCHSearchResponseParser.h"
-#import "RCHWebUtils.h"
 
 @interface RCHPlacementRecsBuilder ()
 

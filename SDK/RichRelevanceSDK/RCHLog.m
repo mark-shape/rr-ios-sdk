@@ -13,7 +13,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHLog.h"
+#else
 #import "RCHLog.h"
+#endif
 
 @implementation RCHLog
 

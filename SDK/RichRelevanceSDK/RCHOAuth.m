@@ -13,7 +13,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+#ifdef SWIFT_PACKAGE
+#import "Private/RCHOAuth.h"
+#else
 #import "RCHOAuth.h"
+#endif
 #import <CommonCrypto/CommonHMAC.h>
 
 #define RCHPCEN(s) \

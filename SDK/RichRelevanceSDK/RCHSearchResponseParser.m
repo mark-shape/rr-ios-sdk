@@ -15,7 +15,13 @@
 
 #import "RCHSearchResponseParser.h"
 #import "RCHSearchResult.h"
+#import "RCHErrors.h"
+#import "RCHAPIConstants.h"
+#ifdef SWIFT_PACKAGE
+#import "Import/NSObject+RCHImport.h"
+#else
 #import "NSObject+RCHImport.h"
+#endif
 
 static NSString *RCHSearchResponseLastAddToCartParameter = nil;
 
